@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url(./Barlow-SemiBold.ttf) format('opentype');
+  font-weight: 600;
+  font-display: optionalink;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FrauncesBold';
+  src: url(./Fraunces-Bold.ttf) format('opentype');
+  font-weight: 700;
+  font-display: optionalink;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FrauncesBlack';
+  src: url(./Fraunces-Black.ttf) format('opentype');
+  font-weight: 900;
+  font-display: optionalink;
+  font-style: normal;
+}
