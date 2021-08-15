@@ -1,0 +1,207 @@
+:root {
+  --red-color: hsl(7, 99%, 70%);
+  --yellow-color: hsl(51, 100%, 49%);
+  --cyan-color: hsl(168, 34%, 41%);
+  --cyan-dark-color: hsl(167, 40%, 24%);
+  --blue-color: hsl(198, 62%, 26%);
+  --blue-dark-color: hsl(212, 27%, 19%);
+  --gray-dark-color: hsl(213, 9%, 39%);
+  --grey-color: hsl(232, 10%, 55%);
+  --grey-light-color: hsl(210, 4%, 67%);
+  --white-color: hsl(0, 0%, 100%);
+
+  --barlow-font: "Barlow", sans-serif;
+  --frauncesBold-font: "FrauncesBold", serif;
+  --frauncesBlack-font: "FrauncesBlack", serif;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.header {
+  background: #3ebfff url(./images/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+  min-height: 538px;
+}
+
+ul {
+  list-style: none;
+  /* display: none; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 25px;
+  position:relative;
+}
+
+
+.nav{
+  display: none;
+  position: absolute;
+  background-color: var(--white-color);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 87%;
+  text-align: center;
+  top: 107px;
+  padding: 28px 0 35px;
+}
+
+.nav::before{
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: -16px;
+  top: -16px;
+  transform: rotate(45deg);
+    background: linear-gradient(45deg, #fff 50%, #3ebfff 50%);
+}
+
+.nav li{
+  padding: 0 90px
+}
+
+.nav li a{
+  font-family: var(--barlow-font);
+  /* color: var(--gray-dark-color); */
+  color: #5a636cc7;
+  padding: 16px 0 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li a:hover{
+  background-color: var(--yellow-color);
+  color: #000;
+  text-transform: uppercase;
+  font-family: "FrauncesBlack";
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all .3s;
+  margin: 7px 0;
+}
+
+.hero {
+  font-family: var(--frauncesBold-font);
+  text-align: center;
+  font-size: 40px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.btn-down {
+  margin: auto;
+  display: block;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.card-white{
+  padding: 60px 38px;
+  text-align: center;
+}
+
+.card-white--title{
+  font-family: var(--frauncesBold-font);
+  color: var(--blue-dark-color);
+}
+
+.card-white--text{
+  color: hsl(244, 7%, 56%);
+}
+
+.graphic{
+  background: url(./images/mobile/image-graphic-design.jpg) no-repeat;
+  background-size: cover;
+  padding: 25rem 30px 75px;
+  text-align: center;
+}
+
+.photography{
+  background: url(./images/mobile/image-photography.jpg) no-repeat;
+  background-size: cover;
+  padding: 25rem 30px 75px;
+  text-align: center;
+}
+
+.testimonials{
+  padding: 60px 0;
+  text-align: center;
+}
+
+.testimonial-card{
+  padding: 60px 10px 20px;
+}
+
+.avatar-img{
+  width: 73px;
+  border-radius: 50%;
+}
+
+.row{
+  display: flex
+}
+
+.row div{
+  flex: 1;
+}
+
+.row div img{
+  display: block;
+  width: 100%;
+}
+
+.footer{
+  padding: 78px 10px;
+  background-color: #90D4C5
+}
+.nav-footer{
+  max-width: 300px;
+  margin: auto;
+}
+
+.social-media{
+  max-width: 165px;
+  margin: auto
+}
+
+.nav-footer-ul,
+.social-media-ul{
+  display: flex;
+  justify-content:space-between
+}
